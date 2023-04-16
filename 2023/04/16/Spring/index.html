@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="spring什么是spring Spring是一个开源框架，是为了解决企业应用开发的复杂性而创建的。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring是一个轻量级的 控制反转(IoC) 和 面向切面 (AOP)的 非入侵式 的容器框架。  spring的优势 方便解耦，简化开发 AOP编程的支持 声明式事务的支持 方便程序的测试 方便集成各种优秀的框架 降低j">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/04/16/Spring/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="spring什么是spring Spring是一个开源框架，是为了解决企业应用开发的复杂性而创建的。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。 Spring是一个轻量级的 控制反转(IoC) 和 面向切面 (AOP)的 非入侵式 的容器框架。  spring的优势 方便解耦，简化开发 AOP编程的支持 声明式事务的支持 方便程序的测试 方便集成各种优秀的框架 降低j">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029181331752.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029202905181.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029212751341.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029221357904.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221030162553930.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221030162959243.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221030180936275.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221031203925303.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221031111459475.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221031215612023.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101155619666.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101155644393.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101173424957.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101170259503.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221102110941999.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105203558084.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105204407862.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105204611315.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105205425767.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105205645613.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105200650198.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105214629194.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105215523180.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105215631685.png">
+<meta property="og:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105215854754.png">
+<meta property="article:published_time" content="2023-04-16T01:17:16.335Z">
+<meta property="article:modified_time" content="2022-11-06T07:16:14.733Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029181331752.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Spring" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/04/16/Spring/" class="article-date">
+  <time class="dt-published" datetime="2023-04-16T01:17:16.335Z" itemprop="datePublished">2023-04-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="spring"><a href="#spring" class="headerlink" title="spring"></a>spring</h1><h2 id="什么是spring"><a href="#什么是spring" class="headerlink" title="什么是spring"></a>什么是spring</h2><ul>
+<li>Spring是一个开源框架，是为了解决企业应用开发的复杂性而创建的。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。</li>
+<li>Spring是一个轻量级的 <strong>控制反转</strong>(IoC) 和 <strong>面向切面</strong> (AOP)的 <strong>非入侵式</strong> 的容器框架。</li>
+</ul>
+<h2 id="spring的优势"><a href="#spring的优势" class="headerlink" title="spring的优势"></a>spring的优势</h2><ul>
+<li>方便解耦，简化开发</li>
+<li>AOP编程的支持</li>
+<li>声明式事务的支持</li>
+<li>方便程序的测试</li>
+<li>方便集成各种优秀的框架</li>
+<li>降低javaee api的使用难度</li>
+<li>java源码是经典学习范例</li>
+</ul>
+<h3 id="耦合"><a href="#耦合" class="headerlink" title="耦合"></a>耦合</h3><h4 id="程序耦合："><a href="#程序耦合：" class="headerlink" title="程序耦合："></a>程序耦合：</h4><p>程序间的依赖关系。包括类之间的依赖，方法之间的依赖。开发的程序如果耦合度太高就会导致独立性太差。（坏处就是如果修改其中一个模块，很可能会对另一个模块产生影响。）</p>
+<h4 id="解耦："><a href="#解耦：" class="headerlink" title="解耦："></a>解耦：</h4><p>降低程序间的依赖关系</p>
+<p>实际开发中：应该编译器不依赖，运行时才依赖</p>
+<h4 id="如何解耦："><a href="#如何解耦：" class="headerlink" title="如何解耦："></a>如何解耦：</h4><p>第一步：使用反射创建对象，避免使用new</p>
+<p>第二步：通过读取配置文件（xml&#x2F;properties）来获取要创建对象全限定类名</p>
+<h3 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h3><p>工厂模式提供了一种绝佳的创建对象的方法。在工厂模式中，我们并不会直接使用new来创建一个对象，而是使用一个共同的接口类来指定其实现类，这就大大降低了系统的耦合性——<strong>我们无需改变每个调用此接口的类，而直接改变实现此接口的类即可完成软件的更新迭代</strong>。</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029181331752.png" alt="image-20221029181331752"></p>
+<p>工厂模式的思想正好契合SpringIOC的设计思想:<strong>某一接口的具体实现类的选择控制权从调用类中移除，转而交给第三方决定，即借由Spring的Bean配置来实现控制</strong>，这同样也是工厂模式的思想。</p>
+<h3 id="Bean"><a href="#Bean" class="headerlink" title="Bean"></a>Bean</h3><p>可重用组件</p>
+<p>javabean：用java语言编写的可重用组件</p>
+<p>springbean：Spring bean是<strong>Spring框架在运行时管理</strong>的<strong>对象</strong>。Spring bean是任何Spring应用程序的<strong>基本构建块</strong>。你编写的大多数应用程序逻辑代码都将放在Spring bean中。</p>
+<h2 id="IOC-控制反转"><a href="#IOC-控制反转" class="headerlink" title="IOC 控制反转"></a>IOC 控制反转</h2><h3 id="一、基于XML"><a href="#一、基于XML" class="headerlink" title="一、基于XML"></a>一、基于XML</h3><p>把创建对象的权利交给框架（工厂）。它包括依赖注入和依赖查找。</p>
+<p>作用：降低耦合，解除代码的依赖关系</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029202905181.png" alt="image-20221029202905181"></p>
+<h3 id="ApplicationContext的三个实现类"><a href="#ApplicationContext的三个实现类" class="headerlink" title="ApplicationContext的三个实现类"></a>ApplicationContext的三个实现类</h3><p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029212751341.png" alt="image-20221029212751341"></p>
+<h3 id="BeanFactory和ApplicationContext的区别"><a href="#BeanFactory和ApplicationContext的区别" class="headerlink" title="BeanFactory和ApplicationContext的区别"></a>BeanFactory和ApplicationContext的区别</h3><p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221029221357904.png" alt="image-20221029221357904"></p>
+<p>BeanFactory：多例对象使用</p>
+<p>ApplicationContext：单例对象使用（实际开发用的更多）</p>
+<h3 id="创建bean的三种方式"><a href="#创建bean的三种方式" class="headerlink" title="创建bean的三种方式"></a>创建bean的三种方式</h3><ol>
+<li><p>使用默认构造函数创建：使用bean标签时，配以id和class属性之后，且没有其他属性和标签时。则采用默认构造函数创建bean对象，此时若类中没有默认构造函数，则对象无法创建。</p>
+</li>
+<li><p>使用普通工厂中的方法创建对象（使用某个类中的方法创建对象并存入spring容器中）<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221030162553930.png" alt="image-20221030162553930"></p>
+</li>
+<li><p>使用工厂中的静态方法创建对象（使用某个类中的静态方法创建对象，并存入spring容器）</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221030162959243.png" alt="image-20221030162959243"></p>
+</li>
+</ol>
+<h3 id="bean对象的作用范围"><a href="#bean对象的作用范围" class="headerlink" title="bean对象的作用范围"></a>bean对象的作用范围</h3><p>bean标签的scope属性：</p>
+<p>作用：用于指定bean的作用范围</p>
+<p>取值：</p>
+<p>（常用）singleton:单例的（默认值） </p>
+<p>（常用）prototype：多例的 </p>
+<p>request：作用于web应用的请求范围</p>
+<p>session ：作用于web应用的会话范围</p>
+<p>global-session：作用于集群环境的会话范围（全局会话范围），当不是集群环境时，就是session</p>
+<h3 id="bean对象的生命周期"><a href="#bean对象的生命周期" class="headerlink" title="bean对象的生命周期"></a>bean对象的生命周期</h3><h4 id="单例对象："><a href="#单例对象：" class="headerlink" title="单例对象："></a>单例对象：</h4><p>当容器创建时，对象出生</p>
+<p>容器还在，对象一直活着</p>
+<p>容器销毁，对象消亡</p>
+<p>单例对象生命周期和容器相同</p>
+<h4 id="多例对象："><a href="#多例对象：" class="headerlink" title="多例对象："></a>多例对象：</h4><p>使用对象时，spring框架为我们创建</p>
+<p>对象在使用过程中一直活着</p>
+<p>当对象长时间不用，且没有别的对象引用时，由java的垃圾回收器回收</p>
+<h3 id="sping依赖注入"><a href="#sping依赖注入" class="headerlink" title="sping依赖注入"></a>sping依赖注入</h3><p>在当前类需要用到其他类的对象，由spring为我们提供，我们只需要在配置文件中说明依赖关系的维护。</p>
+<p>依赖注入：</p>
+<h4 id="能注入的类型："><a href="#能注入的类型：" class="headerlink" title="能注入的类型："></a>能注入的类型：</h4><ul>
+<li>基本类型和string</li>
+<li>其他bean类型（在配置文件中或者注解配置过的bean）</li>
+<li>复杂类型或集合类</li>
+</ul>
+<p>注：如果时经常变化的数据，并不适用于注入的方式</p>
+<h4 id="注入的方式："><a href="#注入的方式：" class="headerlink" title="注入的方式："></a>注入的方式：</h4><h5 id="使用构造函数提供"><a href="#使用构造函数提供" class="headerlink" title="使用构造函数提供"></a>使用构造函数提供</h5><p>this.xxx &#x3D; xxx;</p>
+<p>使用的标签：constructor-arg</p>
+<p>标签出现的位置：bean标签的内部</p>
+<p>标签中的属性：</p>
+<ul>
+<li><p>type:用于要注入的数据的数据类型，该数据类型也是构造函数中某个或某些参数的类型（不能独立实现注入 因为可能有多个type类型的变量）</p>
+</li>
+<li><p>index:用于指定要注入的数据的构造函数中指定索引位置的参数赋值。（索引从0开始）</p>
+</li>
+<li><p>name:用于指定给构造函数中指定名称的参数赋值（最常用！！！）</p>
+</li>
+</ul>
+<p>&#x3D;&#x3D;以上三个标签都用于指定给构造函数中哪个参数赋值&#x3D;&#x3D;</p>
+<ul>
+<li><p>value:用于提供基本类型和string的数据</p>
+</li>
+<li><p>ref:用于指定其他的bean类型数据。指的就是在spring的ioc核心容器中出现过的bean对象</p>
+</li>
+</ul>
+<p><strong><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221030180936275.png" alt="image-20221030180936275"></strong></p>
+<p>&#x3D;&#x3D;反射创建Data类的对象并且储存在spring的核心容器中&#x3D;&#x3D;</p>
+<ul>
+<li>特点：在获取bean对象时，注入数据时必须的操作，否则对象无法创建成功。</li>
+<li>弊端：改变了bean对象的实例化方式，使我们在创建对象时，即使用不到某些数据，也必须提供。</li>
+</ul>
+<h3 id="自动装配bean"><a href="#自动装配bean" class="headerlink" title="自动装配bean"></a>自动装配bean</h3><p>在bean标签中，使用autowire属性</p>
+<p>值：</p>
+<ul>
+<li>byName:会自动在容器上下文中查找，和自己对象set方法后面的值对应的bean id</li>
+<li>byType:会自动在容器上下文中查找，和自己对象属性类型相同的bean</li>
+</ul>
+<p>小结：</p>
+<ul>
+<li>byname的时候，需要保证所有beaid的id唯一，并且这个bean需要和自动注入的属性和set方法的值一致</li>
+<li>bytype的时候，需要保证所有bean的class唯一，并且这个bean需要和自动注入的属性和一致</li>
+</ul>
+<h5 id="使用set方法提供"><a href="#使用set方法提供" class="headerlink" title="使用set方法提供"></a>使用set方法提供</h5><p>&#x3D;&#x3D;更常用&#x3D;&#x3D;</p>
+<p>成员变量的set方法</p>
+<p>使用中的标签：property</p>
+<p>标签出现的位置：bean标签内部</p>
+<p>标签中的属性：</p>
+<ul>
+<li><p>name：用于指定注入时所调用的set方法名称（只关心set方法）</p>
+</li>
+<li><p>value:用于提供基本类型和string的数据</p>
+</li>
+<li><p>ref:用于指定其他的bean类型数据。指的就是在spring的ioc核心容器中出现过的bean对象</p>
+</li>
+</ul>
+<p>类似于构造方法</p>
+<ul>
+<li>优势：创建对象时没有明确的限制，可以直接使用默认构造函数。</li>
+<li>弊端：如果有某个成员必须有值，则获取对象时set方法没有执行。</li>
+</ul>
+<p>&#x3D;&#x3D;复杂类型的注入&#x2F;集合类型的注入&#x3D;&#x3D;</p>
+<p>用于给List结构集合注入的标签</p>
+<p>list array set</p>
+<p>用于给Map结构集合注入的标签</p>
+<p>map props</p>
+<p>结构相同，标签可以互换</p>
+<h3 id="二、基于注解"><a href="#二、基于注解" class="headerlink" title="二、基于注解"></a>二、基于注解</h3><ul>
+<li>注解配置和xml配置要实现的功能都是一样的，都是要降低程序之间的耦合，只是配置的形式不一样。实际开发中，两种方法都可能会用到。</li>
+</ul>
+<h4 id="用于创建对象的"><a href="#用于创建对象的" class="headerlink" title="用于创建对象的"></a>用于创建对象的</h4><p>作用&#x3D;在xml配置文件中编写一个<bean>标签</p>
+<p>@Component:</p>
+<ul>
+<li><p>作用：用于把当前类对象存入spring容器中</p>
+</li>
+<li><p>属性： value：用于指定bean的id。当不写时，默认值是当前类名，且首字母改小写@Component（value&#x3D;” “）（只有一个属性时value可省略）</p>
+</li>
+</ul>
+<p>@Controller:一般用在表现层</p>
+<p>@Service:一般用在业务层</p>
+<p>@Repository:一般用于持久层</p>
+<p>以上三个注解他们的作用和属性与component是一样的，他们三个是spring框架给我们提供明确的三层使用的注解，使我们的三层对象更加清晰</p>
+<p>在xml中：<img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221031203925303.png" alt="image-20221031203925303"></p>
+<h4 id="用于注入数据的"><a href="#用于注入数据的" class="headerlink" title="用于注入数据的"></a>用于注入数据的</h4><p>作用&#x3D;在xml配置文件中的bean标签中写一个<property>标签</p>
+<p>@Autowired:</p>
+<ul>
+<li><p>作用：自动按照类型注入。只要容器中有唯一的一个bean对象类型和要注入的变量类型匹配，就可以注入成功。</p>
+<p>如果ioc容器中没有任何bean的类型和要注入的变量类型匹配，则报错。</p>
+<p>如果ioc容器中有多个匹配时，先按照类型圈定出匹配的对象，然后使用变量名称匹配</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221031111459475.png" alt="image-20221031111459475"></p>
+</li>
+<li><p>出现位置：</p>
+<p>可以是成员变量，也可以是方法上</p>
+</li>
+</ul>
+<p>细节：在使用注解注入时，set方法不是必须的。前提时自动装配的属性在ioc容器中存在，并且符合名字byname</p>
+<p>@Qualifier:</p>
+<ul>
+<li>作用：在按照类中注入的基础之上再按照名称注入。它在给类成员注入时不能单独使用（在autowired下），但是在给方法参数注入时可以。</li>
+<li>属性：value：用于指定注入bean的id</li>
+</ul>
+<p>@Resouce:</p>
+<ul>
+<li>作用：直接按照bean的id注入，它可以独立使用</li>
+<li>属性：name：用于指定bean的id</li>
+</ul>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221031215612023.png" alt="image-20221031215612023"></p>
+<p>&#x3D;&#x3D;以上三个注入都只能注入其他bean类型的数据，而基本类型和string类型无法使用上述注解实现&#x3D;&#x3D;</p>
+<p>另外，集合类型的注入只能通过XML来实现</p>
+<p>@value</p>
+<ul>
+<li>作用：用于注入基本类型和string类型的数据</li>
+<li>属性：value：用于指定数据的值。它可以使用spring中SpEL（也就是spring的el表达式）</li>
+</ul>
+<p>​									SpEL写法：${表达式}</p>
+<h4 id="用于改变作用范围的"><a href="#用于改变作用范围的" class="headerlink" title="用于改变作用范围的"></a>用于改变作用范围的</h4><p>作用&#x3D;在xml配置文件中的bean标签中使用scope属性</p>
+<p>@Scope：</p>
+<ul>
+<li>作用：用于指定bean的作用范围</li>
+<li>属性：value：指定范围的取值。常用取值：singleton prototype(不写默认单例)</li>
+</ul>
+<h4 id="和生命周期相关"><a href="#和生命周期相关" class="headerlink" title="和生命周期相关"></a>和生命周期相关</h4><p>作用&#x3D;在xml配置文件中使用init-method和destroy-method</p>
+<p>@PreDestory</p>
+<ul>
+<li>作用：用于指定销毁方法</li>
+</ul>
+<p>@PostConstruct</p>
+<ul>
+<li>作用：用于指定初始化方法</li>
+</ul>
+<h5 id="使用注解提供"><a href="#使用注解提供" class="headerlink" title="使用注解提供"></a>使用注解提供</h5><h3 id="使用java的方式配置spring"><a href="#使用java的方式配置spring" class="headerlink" title="使用java的方式配置spring"></a>使用java的方式配置spring</h3><p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101155619666.png" alt="image-20221101155619666"></p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101155644393.png" alt="image-20221101155644393"></p>
+<h2 id="快速构建"><a href="#快速构建" class="headerlink" title="快速构建"></a>快速构建</h2><h3 id="实体类："><a href="#实体类：" class="headerlink" title="实体类："></a>实体类：</h3><p>（因为加了data注解 因此不用再写set get方法 也不用重写tostring方法）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">long</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="xml配置文件："><a href="#xml配置文件：" class="headerlink" title="xml配置文件："></a>xml配置文件：</h3><p>使用set方法注入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">                <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;student&quot;</span> <span class="attr">class</span>=<span class="string">&quot;Student&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;age&quot;</span> <span class="attr">value</span>=<span class="string">&quot;19&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;id&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">value</span>=<span class="string">&quot;张三&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="测试类："><a href="#测试类：" class="headerlink" title="测试类："></a>测试类：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//加载配置文件，加载核心容器对象</span></span><br><span class="line">        <span class="type">ApplicationContext</span> <span class="variable">applicationContext</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ClassPathXmlApplicationContext</span>(<span class="string">&quot;spring.xml&quot;</span>);</span><br><span class="line">        <span class="comment">//根据id获取bean对象</span></span><br><span class="line">        <span class="type">Student</span> <span class="variable">stu</span> <span class="operator">=</span> (Student) applicationContext.getBean(<span class="string">&quot;student&quot;</span>);</span><br><span class="line">        System.out.println(stu);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注：需要再pom.xml中导入springframework的依赖</p>
+<h2 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h2><p>springAOP的底层</p>
+<p>代理模式的分类：</p>
+<ul>
+<li>静态代理</li>
+<li>动态代理</li>
+</ul>
+<h3 id="静态代理："><a href="#静态代理：" class="headerlink" title="静态代理："></a>静态代理：</h3><ul>
+<li>抽象角色：一般使用接口或者抽象类解决</li>
+<li>真实角色：被代理的角色</li>
+<li>代理角色：代理真实角色，代理真实角色后，我们一般会做一些附属操作</li>
+<li>客户：访问代理对象的人</li>
+</ul>
+<p>代码步骤：</p>
+<ol>
+<li>接口</li>
+<li>真实角色</li>
+<li>代理角色</li>
+<li>客户端访问代理角色</li>
+</ol>
+<p>代理模式的好处：</p>
+<ul>
+<li>可以使真实角色的操作更加纯粹，不用关心一些公共的业务</li>
+<li>公共业务交给代理角色，实现了业务的分工</li>
+<li>公共业务发生扩展的时候，方便集中管理</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>一个真实角色会产生一个代理角色，代码量会翻倍，开发效率会变低</li>
+</ul>
+<h3 id="动态代理："><a href="#动态代理：" class="headerlink" title="动态代理："></a>动态代理：</h3><ul>
+<li>动态代理和静态代理角色一样</li>
+<li>动态代理的代理类时动态生成的，不是我们直接写好的！</li>
+<li>动态代理分为两大类：基于接口的动态代理，基于类的动态代理<ul>
+<li>基于接口—JDK【本次学习】</li>
+<li>基于类：cglib</li>
+<li>java字节码实现：javasist</li>
+</ul>
+</li>
+</ul>
+<p>需要了解两个类：Proxy：代理，InvocationHandler:调用处理程序</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101173424957.png" alt="image-20221101173424957"></p>
+<p>Proxy：生成动态代理实例</p>
+<p>InvocationHandler：调用处理程序并返回结果</p>
+<p>动态代理的好处：</p>
+<ul>
+<li>所有静态代理的好处</li>
+<li>一个动态代理类代理的是一个接口，一般就是对应的一类业务</li>
+<li>一个动态代理类可以代理多个类，只要实现了接口即可</li>
+</ul>
+<p>AOP的目的：</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221101170259503.png" alt="image-20221101170259503"></p>
+<h2 id="AOP-面向切面编程"><a href="#AOP-面向切面编程" class="headerlink" title="AOP 面向切面编程"></a>AOP 面向切面编程</h2><h3 id="AOP在spring中的作用"><a href="#AOP在spring中的作用" class="headerlink" title="AOP在spring中的作用"></a>AOP在spring中的作用</h3><p>提供声明式事务；允许用户自定义切面</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221102110941999.png" alt="image-20221102110941999"></p>
+<h3 id="使用spring实现AOP"><a href="#使用spring实现AOP" class="headerlink" title="使用spring实现AOP"></a>使用spring实现AOP</h3><p>使用AOP织入，需要导入一个依赖包</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.aspectj<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>aspectjweaver<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.9.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="基于XML"><a href="#基于XML" class="headerlink" title="基于XML"></a>基于XML</h4><p>需要创建bean.xml 导入配置文件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:aop</span>=<span class="string">&quot;http://www.springframework.org/schema/aop&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="string"><span class="tag">        https://www.springframework.org/schema/beans/spring-beans.xsd</span></span></span><br><span class="line"><span class="string"><span class="tag">        http://www.springframework.org/schema/aop</span></span></span><br><span class="line"><span class="string"><span class="tag">        https://www.springframework.org/schema/aop/spring-aop.xsd&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>​	bean.xml中</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--配置spring的IOC，把service对象配置进来 （这个service需要增强）--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;accountService&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.whuse.service.impl.AccountService&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 配置日志--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;logger&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.whuse.utils.Logger&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--配置AOP --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">aop:config</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 配置切面，切面引用上面的logger（通知）--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">aop:aspect</span> <span class="attr">id</span>=<span class="string">&quot;logAdvice&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;logger&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 配置通知的类型，并且建立通知方法和切入点方法的关联</span></span><br><span class="line"><span class="comment">            这个切面中有一个方法叫&quot;printLog&quot;，并且准备在增强之后先执行</span></span><br><span class="line"><span class="comment">            之后对pointcut的方法执行增强，过程：创建代理</span></span><br><span class="line"><span class="comment">        --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">aop:before</span> <span class="attr">method</span>=<span class="string">&quot;printLog&quot;</span> <span class="attr">pointcut</span>=<span class="string">&quot;execution(public void com.whuse.service.impl.AccountService.saveAccount())&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">aop:before</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">aop:aspect</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">aop:config</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ol>
+<li><p>把通知bean也交给spring管理</p>
+</li>
+<li><p>使用aop：config标签表明开始AOP管理</p>
+</li>
+<li><p>使用aop:aspect标签表明配置切面</p>
+<ul>
+<li>id属性：给切面提供一个唯一表示</li>
+<li>ref属性：指定通知类的id</li>
+</ul>
+</li>
+<li><p>在aop:aspcet标签内部使用对应标签来配置通知的类型</p>
+<ul>
+<li>前置通知：aop:before:表示前置通知</li>
+</ul>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105203558084.png" alt="image-20221105203558084"></p>
+<ul>
+<li>method属性：用于指定Logger类中哪个方法是前置通知</li>
+<li>pointcut属性：用于指定切入点表达式，该表达式的含义指的是对业务层中哪些方法增强</li>
+</ul>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105204407862.png" alt="image-20221105204407862"></p>
+<p>使用aop：pointcut标签就不用在aop：xxx标签之后写pointcut</p>
+<p>需要在之后pointcut-ref&#x3D;”aop:xxx id”</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105204611315.png" alt="image-20221105204611315"></p>
+<p>&#x3D;&#x3D;注意:如果在外面写，它只能在切面之前定义&#x3D;&#x3D;</p>
+<ul>
+<li>环绕通知：它是spring框架提供的一种可以在代码中手动控制增强方法何时执行的方式</li>
+</ul>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105205425767.png" alt="image-20221105205425767"></p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105205645613.png" alt="image-20221105205645613"></p>
+<p>语句写在：proceed之前：前置通知</p>
+<p>​					proceed之后：后置通知</p>
+<p>​					catch里：异常通知</p>
+<p>​					finally里：最终通知</p>
+<ul>
+<li><p>切入点表达式的写法：<br>关键字：excution(表达式)<br>表达式：<br>访问修饰符 返回值 包名.包名.包名…类名.方法名（参数列表）<br>标准表达式写法：</p>
+<p>public void com.whuse.service.impl.AccountService.saveAccount()</p>
+<p>访问修饰符可以省略；</p>
+<p>返回值可以使用通配符，表示任意返回值；</p>
+<p>包名可以使用通配符，表示任意包。但是有几级包，就需要写几个**；</p>
+<p>包名可以使用..表示当前包及其子包；</p>
+<p>类名和方法名都可以使用通配符；</p>
+<p>参数列表可以直接写数据类型：基本类型写名称，引用类型写包名.类名的方式；</p>
+<p>可以使用通配符表示任意类型，但必须有参数；</p>
+<p>可以用..表示有无参数均可，有参数可以是任意类型</p>
+<p>全通配写法：&#x3D;&#x3D;实际开发中通常写法：切到业务层实现类下的所有方法：com.whuse.service.impl.<em>.</em>.(..)&#x3D;&#x3D;</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105200650198.png" alt="image-20221105200650198"></p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="基于注解"><a href="#基于注解" class="headerlink" title="基于注解"></a>基于注解</h4><ol>
+<li><p>更改IOC</p>
+<ul>
+<li><p>导入文件需要更改：context</p>
+</li>
+<li><p>需要添加语句</p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105214629194.png"></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105215523180.png" alt="image-20221105215523180"></p>
+<p>此时就不用在xml中配置service了，直接使用注解</p>
+<p> 在AccountServiceImpl类开头@service（“accountService”）即可</p>
+<ul>
+<li><p>把通知类交给spring管理：</p>
+<p>在通知类前 @Component（“logger”）</p>
+<p>​					@Aspect &#x2F;&#x2F;表示当前类是一个切面类</p>
+</li>
+<li><p>前置通知:@Before()</p>
+</li>
+<li><p>后置通知:@AfterReturning()</p>
+</li>
+<li><p>异常通知:@AfterThrowing()</p>
+</li>
+<li><p>最终通知:@After()</p>
+</li>
+<li><p>环绕通知:@Around()</p>
+</li>
+<li><p>@Pointcut：切面</p>
+</li>
+</ul>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105215631685.png" alt="image-20221105215631685"></p>
+<p><img src="C:\Users\123\AppData\Roaming\Typora\typora-user-images\image-20221105215854754.png" alt="image-20221105215854754"></p>
+<h2 id="整合Mybatis"><a href="#整合Mybatis" class="headerlink" title="整合Mybatis"></a>整合Mybatis</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/04/16/Spring/" data-id="clgipxx3g0002wkscff4lhjc7" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/04/16/SpringMVC/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/04/16/JDBC%E7%AE%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/04/16/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%EF%BC%8C%E7%BB%93%E6%9E%84/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/16/%E4%BA%8B%E5%8A%A1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/16/%E4%BB%A3%E7%A0%81%E6%B5%8B%E8%AF%95%E5%AF%BC%E5%BC%95/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/16/Spring%E6%95%B4%E5%90%88Mybatis/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/16/SpringMVC/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
